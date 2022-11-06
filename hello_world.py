@@ -88,6 +88,7 @@ def create_option_window(settings):
     next = [ [ sg.Button('Prev'),sg.Push(), sg.Button('Next',key='-BUTTON-NEXT-')] ]
     layout = [[frame],
              [next]]
+             
      # Create the Window
     window = sg.Window('Generate SQL', layout,size=WIN_SIZE)
     window['Prev'].Disabled=True
